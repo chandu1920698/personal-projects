@@ -5,9 +5,9 @@ const path = require('path');
 const publicPath = path.join(__dirname, 'public');
 app.use(express.static(publicPath));
 
-// app.get('', function (req, res) {
-//     res.render('index', {});
-//   });
+app.get('/public',function(req,res) {
+    res.sendFile('mc.html');
+  });;
 
 app.listen(port);
 // app.listen(3000);
