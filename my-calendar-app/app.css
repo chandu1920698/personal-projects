@@ -1,0 +1,91 @@
+input {
+    font-size: 20px;
+    width: 100px;
+    height: 25px;
+    margin: 10px 0px 10px 675px;
+  }
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  
+  body {
+    background: white;
+  }
+  .Go {
+    height: 40px;
+    width: 40px;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    opacity: .9;
+    background: green;
+    border: 1px;
+  }
+  
+  /*
+  .Clear {
+    height: 40px;
+    width: 100px;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    opacity: .9;
+    background: green;
+    border: 1px;
+  }
+  
+  */
+  table {
+    float: left;
+    border: 10px RoyalBlue ;
+    margin: 20px 2px 30px 60px;
+    height: 300px;
+    box-sizing: border-box;
+  }
+  
+  .month {
+    color: white;
+    background: RoyalBlue;
+    height: 25px;
+    
+  }
+  
+  td {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    transition: transform .1s; /* Animation */
+    width: 50px;
+    height: 35px;
+    margin: 0 auto;
+  }
+  
+  th.holiday {
+    color: red;
+    height: 35px;
+  }
+  
+  td.holiday {
+    color: red;
+    font-weight: bold;
+    background: #FFdF50;
+  }
+  
+  h1 {
+    font-weight: bolder;
+    font-size: 50px;
+    color: #DC143C;
+    text-align: center;
+  }
+  
+  span {
+    font-size: 15px;
+  }
+  
+  
+  td:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang='en-IN'>
+<head>
+  <meta charset="utf-8">
+  <title>Calendar</title>
+</head>
+<body>
+  <div>
+    <h1> Calendar <span>[1701 to AnyYear]</span></h1>
+  </div>
+  <div>
+    <input id="year" type="text"  value="" placeholder='Enter Year'>
+  <button class="Go">Go</button>
+  <!-- <button  class="Clear">Clear</button> -->
+  </div>
+
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> January </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td class="holiday" id="jan-0-1"> </td>
+        <td id="jan-1-1"> </td>
+        <td id="jan-2-1"> </td>
+        <td id="jan-3-1"> </td>
+        <td id="jan-4-1"> </td>
+        <td id="jan-5-1"> </td>
+        <td class="holiday" id="jan-6-1"> </td>
+      </tr>
+      <tr>
+        <td class="holiday"  id="jan-0-2"> </td>
+        <td id="jan-1-2"> </td>
+        <td id="jan-2-2"> </td>
+        <td id="jan-3-2"> </td>
+        <td id="jan-4-2"> </td>
+        <td id="jan-5-2"> </td>
+        <td  class="holiday" id="jan-6-2"> </td>
+      </tr>
+      <tr>
+        <td class="holiday"  id="jan-0-3"> </td>
+        <td id="jan-1-3"> </td>
+        <td id="jan-2-3"> </td>
+        <td id="jan-3-3"> </td>
+        <td id="jan-4-3"> </td>
+        <td id="jan-5-3"> </td>
+        <td  class="holiday" id="jan-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jan-0-4"> </td>
+        <td id="jan-1-4"> </td>
+        <td id="jan-2-4"> </td>
+        <td id="jan-3-4"> </td>
+        <td id="jan-4-4"> </td>
+        <td id="jan-5-4"> </td>
+        <td  class="holiday" id="jan-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jan-0-5"> </td>
+        <td id="jan-1-5"> </td>
+        <td id="jan-2-5"> </td>
+        <td id="jan-3-5"> </td>
+        <td id="jan-4-5"> </td>
+        <td id="jan-5-5"> </td>
+        <td  class="holiday" id="jan-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jan-0-6"> </td>
+        <td id="jan-1-6"> </td>
+        <td id="jan-2-6"> </td>
+        <td id="jan-3-6"> </td>
+        <td id="jan-4-6"> </td>
+        <td id="jan-5-6"> </td>
+        <td  class="holiday" id="jan-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> February </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td  class="holiday" id="feb-0-1"> </td>
+        <td id="feb-1-1"> </td>
+        <td id="feb-2-1"> </td>
+        <td id="feb-3-1"> </td>
+        <td id="feb-4-1"> </td>
+        <td id="feb-5-1"> </td>
+        <td  class="holiday" id="feb-6-1"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="feb-0-2"> </td>
+        <td id="feb-1-2"> </td>
+        <td id="feb-2-2"> </td>
+        <td id="feb-3-2"> </td>
+        <td id="feb-4-2"> </td>
+        <td id="feb-5-2"> </td>
+        <td  class="holiday" id="feb-6-2"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="feb-0-3"> </td>
+        <td id="feb-1-3"> </td>
+        <td id="feb-2-3"> </td>
+        <td id="feb-3-3"> </td>
+        <td id="feb-4-3"> </td>
+        <td id="feb-5-3"> </td>
+        <td  class="holiday" id="feb-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="feb-0-4"> </td>
+        <td id="feb-1-4"> </td>
+        <td id="feb-2-4"> </td>
+        <td id="feb-3-4"> </td>
+        <td id="feb-4-4"> </td>
+        <td id="feb-5-4"> </td>
+        <td  class="holiday" id="feb-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="feb-0-5"> </td>
+        <td id="feb-1-5"> </td>
+        <td id="feb-2-5"> </td>
+        <td id="feb-3-5"> </td>
+        <td id="feb-4-5"> </td>
+        <td id="feb-5-5"> </td>
+        <td  class="holiday" id="feb-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="feb-0-6"> </td>
+        <td id="feb-1-6"> </td>
+        <td id="feb-2-6"> </td>
+        <td id="feb-3-6"> </td>
+        <td id="feb-4-6"> </td>
+        <td id="feb-5-6"> </td>
+        <td  class="holiday" id="feb-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> March </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td  class="holiday" id="mar-0-1"> </td>
+        <td id="mar-1-1"> </td>
+        <td id="mar-2-1"> </td>
+        <td id="mar-3-1"> </td>
+        <td id="mar-4-1"> </td>
+        <td id="mar-5-1"> </td>
+        <td  class="holiday" id="mar-6-1"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="mar-0-2"> </td>
+        <td id="mar-1-2"> </td>
+        <td id="mar-2-2"> </td>
+        <td id="mar-3-2"> </td>
+        <td id="mar-4-2"> </td>
+        <td id="mar-5-2"> </td>
+        <td  class="holiday" id="mar-6-2"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="mar-0-3"> </td>
+        <td id="mar-1-3"> </td>
+        <td id="mar-2-3"> </td>
+        <td id="mar-3-3"> </td>
+        <td id="mar-4-3"> </td>
+        <td id="mar-5-3"> </td>
+        <td  class="holiday" id="mar-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="mar-0-4"> </td>
+        <td id="mar-1-4"> </td>
+        <td id="mar-2-4"> </td>
+        <td id="mar-3-4"> </td>
+        <td id="mar-4-4"> </td>
+        <td id="mar-5-4"> </td>
+        <td  class="holiday" id="mar-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="mar-0-5"> </td>
+        <td id="mar-1-5"> </td>
+        <td id="mar-2-5"> </td>
+        <td id="mar-3-5"> </td>
+        <td id="mar-4-5"> </td>
+        <td id="mar-5-5"> </td>
+        <td  class="holiday" id="mar-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="mar-0-6"> </td>
+        <td id="mar-1-6"> </td>
+        <td id="mar-2-6"> </td>
+        <td id="mar-3-6"> </td>
+        <td id="mar-4-6"> </td>
+        <td id="mar-5-6"> </td>
+        <td  class="holiday" id="mar-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> April </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td  class="holiday" id="apr-0-1"> </td>
+        <td id="apr-1-1"> </td>
+        <td id="apr-2-1"> </td>
+        <td id="apr-3-1"> </td>
+        <td id="apr-4-1"> </td>
+        <td id="apr-5-1"> </td>
+        <td  class="holiday" id="apr-6-1"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="apr-0-2"> </td>
+        <td id="apr-1-2"> </td>
+        <td id="apr-2-2"> </td>
+        <td id="apr-3-2"> </td>
+        <td id="apr-4-2"> </td>
+        <td id="apr-5-2"> </td>
+        <td  class="holiday" id="apr-6-2"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="apr-0-3"> </td>
+        <td id="apr-1-3"> </td>
+        <td id="apr-2-3"> </td>
+        <td id="apr-3-3"> </td>
+        <td id="apr-4-3"> </td>
+        <td id="apr-5-3"> </td>
+        <td  class="holiday" id="apr-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="apr-0-4"> </td>
+        <td id="apr-1-4"> </td>
+        <td id="apr-2-4"> </td>
+        <td id="apr-3-4"> </td>
+        <td id="apr-4-4"> </td>
+        <td id="apr-5-4"> </td>
+        <td  class="holiday" id="apr-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="apr-0-5"> </td>
+        <td id="apr-1-5"> </td>
+        <td id="apr-2-5"> </td>
+        <td id="apr-3-5"> </td>
+        <td id="apr-4-5"> </td>
+        <td id="apr-5-5"> </td>
+        <td  class="holiday" id="apr-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="apr-0-6"> </td>
+        <td id="apr-1-6"> </td>
+        <td id="apr-2-6"> </td>
+        <td id="apr-3-6"> </td>
+        <td id="apr-4-6"> </td>
+        <td id="apr-5-6"> </td>
+        <td  class="holiday" id="apr-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> May </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td  class="holiday" id="may-0-1"> </td>
+        <td id="may-1-1"> </td>
+        <td id="may-2-1"> </td>
+        <td id="may-3-1"> </td>
+        <td id="may-4-1"> </td>
+        <td id="may-5-1"> </td>
+        <td  class="holiday" id="may-6-1"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="may-0-2"> </td>
+        <td id="may-1-2"> </td>
+        <td id="may-2-2"> </td>
+        <td id="may-3-2"> </td>
+        <td id="may-4-2"> </td>
+        <td id="may-5-2"> </td>
+        <td  class="holiday" id="may-6-2"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="may-0-3"> </td>
+        <td id="may-1-3"> </td>
+        <td id="may-2-3"> </td>
+        <td id="may-3-3"> </td>
+        <td id="may-4-3"> </td>
+        <td id="may-5-3"> </td>
+        <td  class="holiday" id="may-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="may-0-4"> </td>
+        <td id="may-1-4"> </td>
+        <td id="may-2-4"> </td>
+        <td id="may-3-4"> </td>
+        <td id="may-4-4"> </td>
+        <td id="may-5-4"> </td>
+        <td  class="holiday" id="may-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="may-0-5"> </td>
+        <td id="may-1-5"> </td>
+        <td id="may-2-5"> </td>
+        <td id="may-3-5"> </td>
+        <td id="may-4-5"> </td>
+        <td id="may-5-5"> </td>
+        <td  class="holiday" id="may-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="may-0-6"> </td>
+        <td id="may-1-6"> </td>
+        <td id="may-2-6"> </td>
+        <td id="may-3-6"> </td>
+        <td id="may-4-6"> </td>
+        <td id="may-5-6"> </td>
+        <td  class="holiday" id="may-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> June </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jun-0-1"> </td>
+        <td id="jun-1-1"> </td>
+        <td id="jun-2-1"> </td>
+        <td id="jun-3-1"> </td>
+        <td id="jun-4-1"> </td>
+        <td id="jun-5-1"> </td>
+        <td  class="holiday" id="jun-6-1"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jun-0-2"> </td>
+        <td id="jun-1-2"> </td>
+        <td id="jun-2-2"> </td>
+        <td id="jun-3-2"> </td>
+        <td id="jun-4-2"> </td>
+        <td id="jun-5-2"> </td>
+        <td  class="holiday" id="jun-6-2"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jun-0-3"> </td>
+        <td id="jun-1-3"> </td>
+        <td id="jun-2-3"> </td>
+        <td id="jun-3-3"> </td>
+        <td id="jun-4-3"> </td>
+        <td id="jun-5-3"> </td>
+        <td  class="holiday" id="jun-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jun-0-4"> </td>
+        <td id="jun-1-4"> </td>
+        <td id="jun-2-4"> </td>
+        <td id="jun-3-4"> </td>
+        <td id="jun-4-4"> </td>
+        <td id="jun-5-4"> </td>
+        <td  class="holiday" id="jun-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jun-0-5"> </td>
+        <td id="jun-1-5"> </td>
+        <td id="jun-2-5"> </td>
+        <td id="jun-3-5"> </td>
+        <td id="jun-4-5"> </td>
+        <td id="jun-5-5"> </td>
+        <td class="holiday" id="jun-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jun-0-6"> </td>
+        <td id="jun-1-6"> </td>
+        <td id="jun-2-6"> </td>
+        <td id="jun-3-6"> </td>
+        <td id="jun-4-6"> </td>
+        <td id="jun-5-6"> </td>
+        <td  class="holiday" id="jun-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> July </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jul-0-1"> </td>
+        <td id="jul-1-1"> </td>
+        <td id="jul-2-1"> </td>
+        <td id="jul-3-1"> </td>
+        <td id="jul-4-1"> </td>
+        <td id="jul-5-1"> </td>
+        <td  class="holiday" id="jul-6-1"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jul-0-2"> </td>
+        <td id="jul-1-2"> </td>
+        <td id="jul-2-2"> </td>
+        <td id="jul-3-2"> </td>
+        <td id="jul-4-2"> </td>
+        <td id="jul-5-2"> </td>
+        <td  class="holiday" id="jul-6-2"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jul-0-3"> </td>
+        <td id="jul-1-3"> </td>
+        <td id="jul-2-3"> </td>
+        <td id="jul-3-3"> </td>
+        <td id="jul-4-3"> </td>
+        <td id="jul-5-3"> </td>
+        <td  class="holiday" id="jul-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jul-0-4"> </td>
+        <td id="jul-1-4"> </td>
+        <td id="jul-2-4"> </td>
+        <td id="jul-3-4"> </td>
+        <td id="jul-4-4"> </td>
+        <td id="jul-5-4"> </td>
+        <td  class="holiday" id="jul-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jul-0-5"> </td>
+        <td id="jul-1-5"> </td>
+        <td id="jul-2-5"> </td>
+        <td id="jul-3-5"> </td>
+        <td id="jul-4-5"> </td>
+        <td id="jul-5-5"> </td>
+        <td  class="holiday" id="jul-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="jul-0-6"> </td>
+        <td id="jul-1-6"> </td>
+        <td id="jul-2-6"> </td>
+        <td id="jul-3-6"> </td>
+        <td id="jul-4-6"> </td>
+        <td id="jul-5-6"> </td>
+        <td  class="holiday" id="jul-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> August </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td  class="holiday" id="aug-0-1"> </td>
+        <td id="aug-1-1"> </td>
+        <td id="aug-2-1"> </td>
+        <td id="aug-3-1"> </td>
+        <td id="aug-4-1"> </td>
+        <td id="aug-5-1"> </td>
+        <td  class="holiday" id="aug-6-1"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="aug-0-2"> </td>
+        <td id="aug-1-2"> </td>
+        <td id="aug-2-2"> </td>
+        <td id="aug-3-2"> </td>
+        <td id="aug-4-2"> </td>
+        <td id="aug-5-2"> </td>
+        <td  class="holiday" id="aug-6-2"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="aug-0-3"> </td>
+        <td id="aug-1-3"> </td>
+        <td id="aug-2-3"> </td>
+        <td id="aug-3-3"> </td>
+        <td id="aug-4-3"> </td>
+        <td id="aug-5-3"> </td>
+        <td  class="holiday" id="aug-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="aug-0-4"> </td>
+        <td id="aug-1-4"> </td>
+        <td id="aug-2-4"> </td>
+        <td id="aug-3-4"> </td>
+        <td id="aug-4-4"> </td>
+        <td id="aug-5-4"> </td>
+        <td  class="holiday" id="aug-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="aug-0-5"> </td>
+        <td id="aug-1-5"> </td>
+        <td id="aug-2-5"> </td>
+        <td id="aug-3-5"> </td>
+        <td id="aug-4-5"> </td>
+        <td id="aug-5-5"> </td>
+        <td  class="holiday" id="aug-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="aug-0-6"> </td>
+        <td id="aug-1-6"> </td>
+        <td id="aug-2-6"> </td>
+        <td id="aug-3-6"> </td>
+        <td id="aug-4-6"> </td>
+        <td id="aug-5-6"> </td>
+        <td  class="holiday" id="aug-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> September </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td  class="holiday" id="sep-0-1"> </td>
+        <td id="sep-1-1"> </td>
+        <td id="sep-2-1"> </td>
+        <td id="sep-3-1"> </td>
+        <td id="sep-4-1"> </td>
+        <td id="sep-5-1"> </td>
+        <td  class="holiday" id="sep-6-1"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="sep-0-2"> </td>
+        <td id="sep-1-2"> </td>
+        <td id="sep-2-2"> </td>
+        <td id="sep-3-2"> </td>
+        <td id="sep-4-2"> </td>
+        <td id="sep-5-2"> </td>
+        <td  class="holiday" id="sep-6-2"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="sep-0-3"> </td>
+        <td id="sep-1-3"> </td>
+        <td id="sep-2-3"> </td>
+        <td id="sep-3-3"> </td>
+        <td id="sep-4-3"> </td>
+        <td id="sep-5-3"> </td>
+        <td  class="holiday" id="sep-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="sep-0-4"> </td>
+        <td id="sep-1-4"> </td>
+        <td id="sep-2-4"> </td>
+        <td id="sep-3-4"> </td>
+        <td id="sep-4-4"> </td>
+        <td id="sep-5-4"> </td>
+        <td  class="holiday" id="sep-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="sep-0-5"> </td>
+        <td id="sep-1-5"> </td>
+        <td id="sep-2-5"> </td>
+        <td id="sep-3-5"> </td>
+        <td id="sep-4-5"> </td>
+        <td id="sep-5-5"> </td>
+        <td class="holiday" id="sep-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="sep-0-6"> </td>
+        <td id="sep-1-6"> </td>
+        <td id="sep-2-6"> </td>
+        <td id="sep-3-6"> </td>
+        <td id="sep-4-6"> </td>
+        <td id="sep-5-6"> </td>
+        <td  class="holiday" id="sep-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> October </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td  class="holiday" id="oct-0-1"> </td>
+        <td id="oct-1-1"> </td>
+        <td id="oct-2-1"> </td>
+        <td id="oct-3-1"> </td>
+        <td id="oct-4-1"> </td>
+        <td id="oct-5-1"> </td>
+        <td  class="holiday" id="oct-6-1"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="oct-0-2"> </td>
+        <td id="oct-1-2"> </td>
+        <td id="oct-2-2"> </td>
+        <td id="oct-3-2"> </td>
+        <td id="oct-4-2"> </td>
+        <td id="oct-5-2"> </td>
+        <td  class="holiday" id="oct-6-2"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="oct-0-3"> </td>
+        <td id="oct-1-3"> </td>
+        <td id="oct-2-3"> </td>
+        <td id="oct-3-3"> </td>
+        <td id="oct-4-3"> </td>
+        <td id="oct-5-3"> </td>
+        <td  class="holiday" id="oct-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="oct-0-4"> </td>
+        <td id="oct-1-4"> </td>
+        <td id="oct-2-4"> </td>
+        <td id="oct-3-4"> </td>
+        <td id="oct-4-4"> </td>
+        <td id="oct-5-4"> </td>
+        <td  class="holiday" id="oct-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="oct-0-5"> </td>
+        <td id="oct-1-5"> </td>
+        <td id="oct-2-5"> </td>
+        <td id="oct-3-5"> </td>
+        <td id="oct-4-5"> </td>
+        <td id="oct-5-5"> </td>
+        <td  class="holiday" id="oct-6-5"> </td>
+      </tr>
+      <tr>
+        <td class="holiday" id="oct-0-6"> </td>
+        <td id="oct-1-6"> </td>
+        <td id="oct-2-6"> </td>
+        <td id="oct-3-6"> </td>
+        <td id="oct-4-6"> </td>
+        <td id="oct-5-6"> </td>
+        <td  class="holiday" id="oct-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table  border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> November </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td  class="holiday" id="nov-0-1"> </td>
+        <td id="nov-1-1"> </td>
+        <td id="nov-2-1"> </td>
+        <td id="nov-3-1"> </td>
+        <td id="nov-4-1"> </td>
+        <td id="nov-5-1"> </td>
+        <td  class="holiday" id="nov-6-1"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="nov-0-2"> </td>
+        <td id="nov-1-2"> </td>
+        <td id="nov-2-2"> </td>
+        <td id="nov-3-2"> </td>
+        <td id="nov-4-2"> </td>
+        <td id="nov-5-2"> </td>
+        <td  class="holiday" id="nov-6-2"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="nov-0-3"> </td>
+        <td id="nov-1-3"> </td>
+        <td id="nov-2-3"> </td>
+        <td id="nov-3-3"> </td>
+        <td id="nov-4-3"> </td>
+        <td id="nov-5-3"> </td>
+        <td  class="holiday" id="nov-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="nov-0-4"> </td>
+        <td id="nov-1-4"> </td>
+        <td id="nov-2-4"> </td>
+        <td id="nov-3-4"> </td>
+        <td id="nov-4-4"> </td>
+        <td id="nov-5-4"> </td>
+        <td  class="holiday" id="nov-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="nov-0-5"> </td>
+        <td id="nov-1-5"> </td>
+        <td id="nov-2-5"> </td>
+        <td id="nov-3-5"> </td>
+        <td id="nov-4-5"> </td>
+        <td id="nov-5-5"> </td>
+        <td  class="holiday" id="nov-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="nov-0-6"> </td>
+        <td id="nov-1-6"> </td>
+        <td id="nov-2-6"> </td>
+        <td id="nov-3-6"> </td>
+        <td id="nov-4-6"> </td>
+        <td id="nov-5-6"> </td>
+        <td  class="holiday" id="nov-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table border="1" cellspacing="">
+      <tr>
+        <th class="month" colspan="7"> December </th>
+      </tr>
+      <tr>
+        <th class="holiday"> Sun </th>
+        <th> Mon </th>
+        <th> Tue </th>
+        <th> Wed </th>
+        <th> Thu </th>
+        <th> Fri </th>
+        <th class="holiday"> Sat </th>
+      </tr>
+      <tr>
+        <td class="holiday" id="dec-0-1"> </td>
+        <td id="dec-1-1"> </td>
+        <td id="dec-2-1"> </td>
+        <td id="dec-3-1"> </td>
+        <td id="dec-4-1"> </td>
+        <td id="dec-5-1"> </td>
+        <td class="holiday" id="dec-6-1"> </td>
+      </tr>
+      <tr>
+        <td class="holiday"  id="dec-0-2"> </td>
+        <td id="dec-1-2"> </td>
+        <td id="dec-2-2"> </td>
+        <td id="dec-3-2"> </td>
+        <td id="dec-4-2"> </td>
+        <td id="dec-5-2"> </td>
+        <td  class="holiday" id="dec-6-2"> </td>
+      </tr>
+      <tr>
+        <td class="holiday"  id="dec-0-3"> </td>
+        <td id="dec-1-3"> </td>
+        <td id="dec-2-3"> </td>
+        <td id="dec-3-3"> </td>
+        <td id="dec-4-3"> </td>
+        <td id="dec-5-3"> </td>
+        <td  class="holiday" id="dec-6-3"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="dec-0-4"> </td>
+        <td id="dec-1-4"> </td>
+        <td id="dec-2-4"> </td>
+        <td id="dec-3-4"> </td>
+        <td id="dec-4-4"> </td>
+        <td id="dec-5-4"> </td>
+        <td  class="holiday" id="dec-6-4"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="dec-0-5"> </td>
+        <td id="dec-1-5"> </td>
+        <td id="dec-2-5"> </td>
+        <td id="dec-3-5"> </td>
+        <td id="dec-4-5"> </td>
+        <td id="dec-5-5"> </td>
+        <td  class="holiday" id="dec-6-5"> </td>
+      </tr>
+      <tr>
+        <td  class="holiday" id="dec-0-6"> </td>
+        <td id="dec-1-6"> </td>
+        <td id="dec-2-6"> </td>
+        <td id="dec-3-6"> </td>
+        <td id="dec-4-6"> </td>
+        <td id="dec-5-6">Chandu</td>
+        <td  class="holiday" id="dec-6-6"> </td>
+      </tr>
+    </table>
+  </div>
+  <script type ="text/javascript" src="Calander.js"></script>
+</body>
+<link rel="stylesheet" type="text/css" href="G:\fullstack-course4-master\Calander\Calander.css">
+</html>
