@@ -1,0 +1,25 @@
+{
+  "name": "personal-projects",
+  "version": "1.0.0",
+  "description": "This repo is used to store the personal projects",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandu1920698/personal-projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chandu1920698/personal-projects/issues"
+  },
+  "homepage": "https://github.com/chandu1920698/personal-projects#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
