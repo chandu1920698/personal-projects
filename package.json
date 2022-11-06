@@ -4,9 +4,8 @@
   "description": "This repo is used to store the personal projects",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test" : "echo \"Error: no test specified\" && exit 1",
-    "start" : "node public/mc.html"
+    "start": "nodemon index.js",
+    "test" : "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
